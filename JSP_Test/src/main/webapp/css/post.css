@@ -1,0 +1,15 @@
+@charset "EUC-KR";
+
+.inner {
+  margin: 0 auto;
+}
+
+.table-container .inner {
+  width: 50%;
+}
+.table-container .inner table {
+  width: 100%;
+}
+.table-container .inner table tbody {
+  text-align: center;
+}

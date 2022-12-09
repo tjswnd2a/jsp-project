@@ -1,0 +1,16 @@
+@charset "EUC-KR";
+
+.inner {
+  margin: 0 auto;
+}
+
+.write-box .inner {
+  width: 70%;
+  text-align: center;
+}
+.write-box .inner input {
+  width: 70%;
+}
+.write-box .inner textarea {
+  width: 70%;
+}

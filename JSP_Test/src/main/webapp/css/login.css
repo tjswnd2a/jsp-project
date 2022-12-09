@@ -1,0 +1,53 @@
+.inner {
+	position: relative;
+	margin: 0 auto;
+}
+
+.nav {
+  position: relative;
+  padding: 20px 0 20px 0;
+  background-color: #ccc;
+}
+.nav .inner {
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+}
+.nav .inner .sub-menu {
+  text-align: center;
+}
+.nav .inner .sub-menu ul {
+  display: flex;
+}
+.nav .inner .sub-menu ul li {
+  padding: 0 10px 0 10px;
+}
+.nav .inner .sub-menu ul .drop-box ul{
+  display: none;
+  background-color: #fff;
+}
+
+.nav .inner .sub-menu ul .drop-box:hover ul {
+  display: block;
+  background-color: #fff;
+}
+
+.login-section {
+
+  padding: 50px;
+}
+.login-section .inner {
+  text-align: center;
+  padding: 80px;
+  width: 50%;
+  border: 1px solid #000;
+}
+.login-section .inner input {
+  display: block;
+  margin: 0 auto;
+}
+.login-section .inner .btn-login {
+  display: block;
+  width: 150px;
+  margin: 0 auto;
+}

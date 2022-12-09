@@ -1,0 +1,22 @@
+.sign-up-section {
+  position: relative;
+}
+.sign-up-section .inner {
+  width: 50%;
+  margin: 0 auto;
+  text-align: center;
+}
+.sign-up-section .inner input {
+  display: block;
+  width: 50%;
+  margin: 0 auto;
+}
+.sign-up-section .inner .gender-select {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+}
+.sign-up-section .inner .gender-select .select {
+  width: 70px;
+  display: flex;
+}

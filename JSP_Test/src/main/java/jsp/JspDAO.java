@@ -136,7 +136,7 @@ public class JspDAO {
 	}
 	
 	public int update(int jspID, String jspTitle, String jspContent) {
-		String SQL = "UPDATE JSP SET jspTitle = ?, jspContent = ?, WHERE jspID = ?";
+		String SQL = "UPDATE JSP SET jspTitle = ?, jspContent = ? WHERE jspID = ?";
 		try {
 			PreparedStatement pstmt = conn.prepareStatement(SQL);
 			pstmt.setString(1, jspTitle);
@@ -145,6 +145,19 @@ public class JspDAO {
 			return pstmt.executeUpdate();
 		}catch(Exception e) {
 			System.out.println("update Function ERROR");
+			System.out.println(e.getMessage());
+		}
+		return -1;
+	}
+	
+	public int delete(int jspID) {
+		String SQL = "UPDATE JSP SET jspAvailable = 0 WHERE jspID = ?";
+		try {
+			PreparedStatement pstmt = conn.prepareStatement(SQL);
+			pstmt.setInt(1, jspID);
+			return pstmt.executeUpdate();
+		}catch(Exception e) {
+			System.out.println("delete Function ERROR");
 			System.out.println(e.getMessage());
 		}
 		return -1;

@@ -33,9 +33,9 @@
 	<section class="sign-up-section">
 		<form method="post" action="joinActive.jsp" class="inner">
 			<div class="title">회원가입 화면</div>
-			<input type="text" name="userID" placeholder="아이디"> <input
-				type="password" name="userPassword" placeholder="비밀번호"> <input
-				type="text" name="userName" placeholder="이름">
+			<input type="text" name="userID" placeholder="아이디">
+			<input type="password" name="userPassword" placeholder="비밀번호">
+			<input type="text" name="userName" placeholder="이름">
 			<div class="gender-select">
 				<div class="select">
 					<input type="radio" name="userGender" autocomplete="off" value="남자">
@@ -46,8 +46,8 @@
 					여자
 				</div>
 			</div>
-			<input type="email" name="userEmail" placeholder="이메일"> <input
-				type="submit" value="회원가입">
+			<input type="email" name="userEmaill1111111111111111" placeholder="이메일">
+			<input type="submit" value="회원가입">
 		</form>
 	</section>
 </body>

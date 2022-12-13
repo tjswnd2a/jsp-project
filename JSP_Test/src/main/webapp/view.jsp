@@ -78,8 +78,8 @@
 				<%
 				if(userID != null && userID.equals(jsp.getUserID())) {
 				%>
-				<a href="post.jsp"><button>수정</button></a>
-				<a href="post.jsp"><button>삭제</button></a>
+				<a href="update.jsp?jspID=<%= jsp.getJspID() %>"><button>수정</button></a>
+				<a href="deleteAction.jsp?jspID=<%= jsp.getJspID() %>"><button>삭제</button></a>
 				<%
 				}
 				%>

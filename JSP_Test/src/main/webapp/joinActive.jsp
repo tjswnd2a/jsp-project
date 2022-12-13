@@ -21,41 +21,46 @@ request.setCharacterEncoding("UTF-8");
 <title>게시판 웹 사이트</title>
 </head>
 <body>
-
+	<p>
+	<div>aaaaaaaaaaaaa</div>
+	<div><%= user.getUserID() %></div>
+		<div><%= user.getUserEmail() %></div>
+		<div>aaaaaaaaaaaaa</div>
+	</p>
 	<%
-	if(user.getUserID()       == null ||
-	   user.getUserPassword() == null ||
-	   user.getUserName()     == null ||
-	   user.getUserGender()   == null ||
-	   user.getUserEmail()    == null) {
+// 	if(user.getUserID()       == null ||
+// 	   user.getUserPassword() == null ||
+// 	   user.getUserName()     == null ||
+// 	   user.getUserGender()   == null ||
+// 	   user.getUserEmail()    == null) {
 		
-		PrintWriter script = response.getWriter();
-		script.println("bbbbbbbbbbbbbb");
-		script.println("<script>");	
-		script.println("alert('입력이 안된 사항이 있습니다.')");
-		script.println("history.back()");
-		script.println("</script>");
-	} else {
-		UserDAO userDAO = new UserDAO();
-		int result = userDAO.join(user);
-		if(result == -1) {
-			PrintWriter script = response.getWriter();
-			out.println("ccccccccccccc");
-			script.println("<script>");
-			script.println("alert('입력이 안된 사항이 있습니다.')");
-			script.println("history.back()");
-			script.println("</script>");
-		}else {
-			out.println("11111111111111");
-			session.setAttribute("userID",user.getUserID());
-			out.println("22222222222222");
-			PrintWriter script = response.getWriter();
-			script.println("aaaaaaaaaaaaa");
-			script.println("<script>");
-			script.println("location.href = 'main.jsp'");
-			script.println("</script>");
-		}
-	}
+// 		PrintWriter script = response.getWriter();
+// 		script.println("bbbbbbbbbbbbbb");
+// 		script.println("<script>");	
+// 		script.println("alert('입력이 안된 사항이 있습니다.')");
+// 		script.println("history.back()");
+// 		script.println("</script>");
+// 	} else {
+// 		UserDAO userDAO = new UserDAO();
+// 		int result = userDAO.join(user);
+// 		if(result == -1) {
+// 			PrintWriter script = response.getWriter();
+// 			out.println("ccccccccccccc");
+// 			script.println("<script>");
+// 			script.println("alert('입력이 안된 사항이 있습니다.')");
+// 			script.println("history.back()");
+// 			script.println("</script>");
+// 		}else {
+// 			out.println("11111111111111");
+// 			session.setAttribute("userID",user.getUserID());
+// 			out.println("22222222222222");
+// 			PrintWriter script = response.getWriter();
+// 			script.println("aaaaaaaaaaaaa");
+// 			script.println("<script>");
+// 			script.println("location.href = 'main.jsp'");
+// 			script.println("</script>");
+// 		}
+// 	}
 	%>
 </body>
 </html>

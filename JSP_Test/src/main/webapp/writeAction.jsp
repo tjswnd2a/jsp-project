@@ -8,12 +8,12 @@ request.setCharacterEncoding("UTF-8");
 %>
 
 <jsp:useBean id="jsp" class="jsp.Jsp" scope="page" />
-<jsp:setProperty name="jsp" property="jspID" />
+<%-- <jsp:setProperty name="jsp" property="jspID" /> --%>
 <jsp:setProperty name="jsp" property="jspTitle" />
-<jsp:setProperty name="jsp" property="jspDate" />
-<jsp:setProperty name="jsp" property="userID" />
+<%-- <jsp:setProperty name="jsp" property="jspDate" /> --%>
+<%-- <jsp:setProperty name="jsp" property="userID" /> --%>
 <jsp:setProperty name="jsp" property="jspContent" />
-<jsp:setProperty name="jsp" property="jspAvailable" />
+<%-- <jsp:setProperty name="jsp" property="jspAvailable" /> --%>
 <!DOCTYPE html>
 <html>
 <head>
